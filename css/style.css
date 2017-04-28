@@ -50,27 +50,31 @@ body {
 
 }
 
-.btn-lg:hover,
-.btn-lg:focus,
-.btn-lg:active {
-    background-color: rgba(19,128,36,0.54);
-    border: 1 px solid rgba(19,128,26,0);
-    transition: 0.5s;
-}
-
 .btn-success-outline {
+    font-family: 'Cubano-Regular';
     background-color: transparent;
+    color: rgba(19,128,26,1);
     border-radius: 5px;
     border: 1px solid rgba(19,128,26,1);
-    font-family: 'Cubano-Regular';
     transition: 0.5s;
 }
 
+.btn-lg:hover,
+.btn-lg:focus,
+.btn-lg:active,
 .btn-success-outline:hover,
 .btn-success-outline:focus,
 .btn-success-outline:active {
     background-color: rgba(19,128,36,0.54);
     border: 1 px solid rgba(19,128,26,0);
+    transition: 0.5s;
+}
+
+.search-text {
+    font-family: 'Cubano-Regular';
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid rgba(19,128,26,1);
     transition: 0.5s;
 }
 
@@ -86,23 +90,6 @@ body {
     transition: 0.5s;
 }
 
-.navbar-brand {
-    color: white;  
-}
-
-.navbar-brand:hover {
-    color: rgba(19, 128, 36, 0.54);
-    
-}
-
-.nav-link {
-    color: grey;
-}
-
-.nav-link:hover {
-    color: rgba(255,255,255,255)
-}
-
 /* SPANS */
 
 .bold-green {
@@ -111,4 +98,32 @@ body {
 
 .green-underline {
     border-bottom: 1px solid rgba(19, 128, 36, 0.9);
+}
+
+/* NAVBAR */
+.navbar-brand {
+    font-family: 'Cubano-Regular';
+    padding-right: 15px; 
+    color: white;  
+}
+
+.navbar-brand:hover {
+    color: rgba(19, 128, 36, 0.54);
+    
+}
+
+#main-nav {
+    font-family: 'Nunito-Regular';
+}
+
+#main-nav li a {
+    border-bottom: 1px solid transparent;
+    transition: 0.5s;
+    color: gray
+}
+
+#main-nav li a:hover {
+    border-bottom: 1px solid green;
+    transition: 0.5s;
+    color: rgba(255,255,255,255)
 }
